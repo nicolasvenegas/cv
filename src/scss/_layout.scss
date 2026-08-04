@@ -34,21 +34,59 @@ section {
 }
 
 .nav-dot {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--color-border-light);
-  margin: var(--space-md) 0;
+  margin: var(--space-sm) 0;
   transition: background var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
   cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border-radius: 50%;
+  }
 
   &.active {
     background: var(--color-accent);
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
 
   &:hover {
     background: var(--color-text-muted);
+
+    &::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+    }
+  }
+
+  &::after {
+    content: attr(data-section);
+    position: absolute;
+    left: calc(100% + 4px);
+    top: 50%;
+    transform: translateY(-50%) translateX(-4px);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 2px 8px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--duration-fast) var(--ease-out),
+                transform var(--duration-fast) var(--ease-out);
+    z-index: 200;
   }
 }
 

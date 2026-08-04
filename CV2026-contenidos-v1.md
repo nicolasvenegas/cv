@@ -84,17 +84,17 @@ Ayuntamiento de Barcelona, España
 
 ### **TÍTULO PROFESIONAL Y ESPECIALIZACIÓN**
 
-**Maestría en Comunicación** | Universidad Autónoma de Barcelona (UAB) | 2010   
-**Diseño Gráfico** | INACAP, Temuco | 2005 \- 2008 
+**Maestría en Comunicación** | Universidad Autónoma de Barcelona (UAB) | 2010
+**Diseño Gráfico** | INACAP, Temuco | 2005 \- 2008
 
-### **LABORATORIOS DE INVESTIGACIÓN, RESIDENCIAS Y FORMACIÓN ESPECIALIZADA** 
+### **LABORATORIOS DE INVESTIGACIÓN, RESIDENCIAS Y FORMACIÓN ESPECIALIZADA**
 
 * **Estética del proceso. filosofía de la técnica y tecnoestéticas** | Pliegue, espacio formativo y laboratorio de investigación, Chile | 2024  
-* **Redes neuronales e imaginarios digitales de lo postnatural** | Angel Salazar \- WIP Arte Digital, Argentina | 2023   
+* **Redes neuronales e imaginarios digitales de lo postnatural** | Angel Salazar \- WIP Arte Digital, Argentina | 2023
 * **Residencia en Escenotecnia** | Trashumantes & TeatroCinema | 2022  
 * **Orfebrería Digital. Programación en tiempo real** | Flor de Fuego \- WIP Arte Digital, Argentina | 2021  
 * **Diplomado en Gestión Cultural** | Universidad Católica de Temuco | 2020  
-* **Fotografía Avanzada** | RUIDO Photo, Barcelona | 2009 \- 2010
+* **Fotografía Avanzada** | Martin Barzilai y Ona Bros \- RUIDO Photo, Barcelona | 2009 \- 2010
 
 ## **TRABAJOS EXPOSITIVOS RECIENTES**
 

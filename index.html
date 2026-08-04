@@ -1,39 +1,72 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolás Venegas Seguel — CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>@font-face{font-family:'Terminal Grotesque';src:url('fonts/terminal-grotesque.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Terminal Grotesque Open';src:url('fonts/terminal-grotesque-open.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}</style>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%232dd4bf'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23000' font-family='monospace'>N</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Terminal Grotesque";
+        src: url("fonts/terminal-grotesque.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Terminal Grotesque Open";
+        src: url("fonts/terminal-grotesque-open.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      b {
+        color: rgb(189, 189, 189);
+        text-decoration: underline;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%232dd4bf'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23000' font-family='monospace'>N</text></svg>"
+    />
     <script type="module" src="/src/js/main.js"></script>
   </head>
   <body>
     <div id="canvas-container"></div>
 
     <nav class="sidebar" aria-label="Navegación">
-      <div class="nav-dot active" data-section="hero" aria-label="Inicio"></div>
-      <div class="nav-dot" data-section="resumen" aria-label="Resumen"></div>
-      <div class="nav-dot" data-section="experiencia" aria-label="Experiencia"></div>
-      <div class="nav-dot" data-section="formacion" aria-label="Formación"></div>
-      <div class="nav-dot" data-section="expositivos" aria-label="Expositivos"></div>
-      <div class="nav-dot" data-section="proyectos" aria-label="Proyectos"></div>
-      <div class="nav-dot" data-section="herramientas" aria-label="Herramientas"></div>
+      <div class="nav-dot active" data-section="Inicio" title="Inicio"></div>
+      <div class="nav-dot" data-section="resumen" title="Resumen"></div>
+      <div class="nav-dot" data-section="experiencia" title="Experiencia"></div>
+      <div class="nav-dot" data-section="formacion" title="Formación"></div>
+      <div class="nav-dot" data-section="expositivos" title="Expositivos"></div>
+      <div class="nav-dot" data-section="proyectos" title="Proyectos"></div>
+      <div
+        class="nav-dot"
+        data-section="herramientas"
+        title="Herramientas"
+      ></div>
     </nav>
 
     <div class="content-area">
       <div class="container">
-
         <!-- HERO -->
         <section id="hero" class="hero">
           <h1 class="hero-fade hero-fade-delay-1">Nicolás Venegas Seguel</h1>
           <div class="hero-subtitle hero-fade hero-fade-delay-2">
-            Diseñador [INACAP] · Maestría en Comunicación & Educación [Universidad Autónoma de Barcelona]
+            Diseñador [INACAP] · Maestría en Comunicación & Educación
+            [Universidad Autónoma de Barcelona]
           </div>
-          <div class="hero-fade hero-fade-delay-3" style="margin-top: var(--space-lg);">
+          <div
+            class="hero-fade hero-fade-delay-3"
+            style="margin-top: var(--space-lg)"
+          >
             <span class="hero-tag">Filosofía de la Técnica</span>
             <span class="hero-tag">Investigación/Creación</span>
             <span class="hero-tag">Diseño Computacional</span>
@@ -46,7 +79,10 @@
 
           <div class="hero-scope" aria-hidden="true">
             <svg viewBox="0 0 600 48" preserveAspectRatio="none">
-              <path class="scope-path" d="M0,24 C40,8 80,40 120,24 C160,8 200,40 240,24 C280,8 320,40 360,24 C400,8 440,40 480,24 C520,8 560,40 600,24" />
+              <path
+                class="scope-path"
+                d="M0,24 C40,8 80,40 120,24 C160,8 200,40 240,24 C280,8 320,40 360,24 C400,8 440,40 480,24 C520,8 560,40 600,24"
+              />
             </svg>
           </div>
         </section>
@@ -54,26 +90,77 @@
         <!-- RESUMEN -->
         <section id="resumen">
           <div class="section-label reveal">Resumen</div>
-          <p class="reveal" style="max-width: 80ch; font-size: 1.05rem; line-height: 1.8;">
-            Diseñador y Magíster en Comunicación (UAB). Mi perfil profesional se desarrolla en la intersección entre la investigación-creación artística, la producción transmedia y el diseño de ecosistemas digitales. Co-dirijo el estudio tecnocreativo <em>Los Ojos</em>, enfocado en programación creativa, diseño interactivo, videomapping y realidades extendidas. Paralelamente junto a la académica Paulina Soto Cisternas, dirijo <em>Objeto Imposible</em>, oficina de investigación-creación en prácticas socioespaciales, cartografías críticas y nuevos medios, con proyectos exhibidos en bienales, congresos y galerías del país. A esta labor sumo mi rol en la Facultad de Humanidades de la UFRO, donde configuro, desarrollo y mantengo la arquitectura web institucional y los ecosistemas digitales de laboratorios, centros de estudios y posgrados. Esta mirada integral me permite contribuir a la formación de profesionales dotados tanto del oficio técnico que exige el mercado laboral, como del pensamiento crítico necesario para abordar los cruces disciplinares actuales.
+          <p
+            class="reveal"
+            style="max-width: 80ch; font-size: 1.05rem; line-height: 1.8"
+          >
+            Soy
+            <b
+              >diseñador con estudios de Magíster en Comunicación y Educación</b
+            >
+            (UAB). Me he podido especializar en el ámbito de la
+            <b>filosofía de la técnica</b>, las tecnoestéticas y en prácticas
+            escenotécnicas. En mi trabajo, combino la
+            <b>investigación-creación</b>, el <b>diseño computacional</b> y las
+            <b>humanidades digitales</b> para desarrollar objetos,
+            infraestructuras culturales, archivos y sistemas multimedia.
+            <br />
+            Mi trabajo se centra en dos áreas que se complementan entre sí. En
+            el estudio tecnocreativo
+            <a href="http://losojos.cl" target="_blank">Los Ojos</a> trabajo en
+            proyectos de cine expandido, videomapping y realidad aumentada.
+            También, desde la oficina
+            <a href="https://objetoimposible.cl/web/cv.php" target="_blank"
+              >Objeto Imposible</a
+            >, trabajo con la académica y cineasta Paulina Soto Cisternas en
+            proyectos de investigación en torno a fenómenos socioespaciales y
+            los nuevos medios. Ambas áreas se unen en el diseño de dispositivos
+            reflexivos, discursivos y tecnológicos que se materializan en
+            proyectos que hemos podido exhibir en bienales, congresos y galerías
+            de distintos puntos del país.
+            <br />
+            En mi trabajo institucional, me encargo de gestionar y desarrollar
+            el ecosistema web de la <a href="https://fecsh.ufro.cl/" target="_blank">Facultad de Educación, Ciencias Sociales y
+            Humanidades de la Universidad de La Frontera</a>, integrando
+            diseño, tecnologías web y gestión con académicos, investigadores y
+            autoridades universitarias.
+            <br />
+            Me gustaría contribuir, desde lo que ha sedimentado mi práctica y
+            reflexión en mis años de trabajo como diseñador, a la formación de
+            profesionales que puedan pensar críticamente y actuar creativamente,
+            diseñando objetos y ecologías tecnológicas en diálogo con las
+            inquietudes filosóficas y culturales que emergen desde nuestro
+            momento histórico y contexto territorial.
           </p>
         </section>
 
         <!-- EXPERIENCIA -->
         <section id="experiencia">
-          <div class="section-label reveal">Experiencia Profesional y Docente</div>
+          <div class="section-label reveal">
+            Experiencia Profesional y Docente
+          </div>
 
           <div class="timeline">
-
             <div class="timeline-item reveal">
               <div class="timeline-date">2023 – presente</div>
-              <h3>Facultad de Educación, Ciencias Sociales y Humanidades — UFRO</h3>
-              <div class="timeline-role">Diseñador y Desarrollador de Ecosistemas Digitales</div>
+              <h3>
+                Facultad de Educación, Ciencias Sociales y Humanidades — UFRO
+              </h3>
+              <div class="timeline-role">
+                Diseñador y Desarrollador de Ecosistemas Digitales
+              </div>
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Configuración, desarrollo y mantención de la arquitectura web institucional de la facultad.</li>
-                  <li>Gestión integral de plataformas digitales para departamentos, centros de estudios, laboratorios y programas de posgrado.</li>
+                  <li>
+                    Configuración, desarrollo y mantención de la arquitectura
+                    web institucional de la facultad.
+                  </li>
+                  <li>
+                    Gestión integral de plataformas digitales para
+                    departamentos, centros de estudios, laboratorios y programas
+                    de posgrado.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -81,16 +168,32 @@
             <div class="timeline-item reveal">
               <div class="timeline-date">2024 – presente</div>
               <h3>Los Ojos</h3>
-              <div class="timeline-role">Co-Director &amp; Diseñador Multimedia</div>
+              <div class="timeline-role">
+                Co-Director &amp; Diseñador Multimedia
+              </div>
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Dirección de proyectos de programación creativa, diseño interactivo, videomapping y realidades extendidas (XR).</li>
-                  <li>Desarrollo de software creativo a medida y soluciones tecnológicas para el sector cultural y comercial.</li>
-                  <li>Desarrollo de ecosistemas web para humanidades digitales y visualización de datos.</li>
+                  <li>
+                    Dirección de proyectos de programación creativa, diseño
+                    interactivo, videomapping y realidades extendidas (XR).
+                  </li>
+                  <li>
+                    Desarrollo de software creativo a medida y soluciones
+                    tecnológicas para el sector cultural y comercial.
+                  </li>
+                  <li>
+                    Desarrollo de ecosistemas web para humanidades digitales y
+                    visualización de datos.
+                  </li>
                 </ul>
                 <div class="timeline-links">
-                  <a href="https://github.com/tallerlosojos/FESplataformas" target="_blank" rel="noopener">→ FESplataformas</a>
+                  <a
+                    href="https://github.com/tallerlosojos/FESplataformas"
+                    target="_blank"
+                    rel="noopener"
+                    >→ FESplataformas</a
+                  >
                 </div>
               </div>
             </div>
@@ -102,7 +205,11 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Dirección (junto a la cineasta y académica Paulina Soto Cisternas) de proyectos de investigación-creación en prácticas socioespaciales y nuevos medios.</li>
+                  <li>
+                    Dirección (junto a la cineasta y académica Paulina Soto
+                    Cisternas) de proyectos de investigación-creación en
+                    prácticas socioespaciales y nuevos medios.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -114,7 +221,10 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Producción, diseño y dramaturgia para proyectos de arte y cultura, integrando lenguajes multimedia y escenotecnia.</li>
+                  <li>
+                    Producción, diseño y dramaturgia para proyectos de arte y
+                    cultura, integrando lenguajes multimedia y escenotecnia.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -122,11 +232,16 @@
             <div class="timeline-item reveal">
               <div class="timeline-date">2022 – 2024</div>
               <h3>Clap Clap Fantasma</h3>
-              <div class="timeline-role">Investigador / Diseñador / Operador escénico</div>
+              <div class="timeline-role">
+                Investigador / Diseñador / Operador escénico
+              </div>
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Investigación y creación artística colectiva, explorando cruces entre lo escénico, lo territorial y lo multimedial.</li>
+                  <li>
+                    Investigación y creación artística colectiva, explorando
+                    cruces entre lo escénico, lo territorial y lo multimedial.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -138,7 +253,12 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Dirección de proyectos, diseño metodológico y producción general. Gestión de proyectos de diseño participativo y comunicaciones para organizaciones e instituciones del sur de Chile.</li>
+                  <li>
+                    Dirección de proyectos, diseño metodológico y producción
+                    general. Gestión de proyectos de diseño participativo y
+                    comunicaciones para organizaciones e instituciones del sur
+                    de Chile.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -150,7 +270,11 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Dirección de taller y agencia de diseño. Gestión de proyectos gráficos, identidad visual y producción para clientes del territorio.</li>
+                  <li>
+                    Dirección de taller y agencia de diseño. Gestión de
+                    proyectos gráficos, identidad visual y producción para
+                    clientes del territorio.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -162,7 +286,10 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Diseño gráfico, producción editorial y desarrollo de proyectos visuales en entorno de productora y taller.</li>
+                  <li>
+                    Diseño gráfico, producción editorial y desarrollo de
+                    proyectos visuales en entorno de productora y taller.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -174,7 +301,10 @@
               <div class="timeline-desc">
                 <p>Temuco, Chile</p>
                 <ul>
-                  <li>Impartición de cátedras de Fotografía y Lenguaje Audiovisual.</li>
+                  <li>
+                    Impartición de cátedras de Fotografía y Lenguaje
+                    Audiovisual.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -182,15 +312,19 @@
             <div class="timeline-item reveal">
               <div class="timeline-date">2010 – 2011</div>
               <h3>Cibernarium</h3>
-              <div class="timeline-role">Docente de Alfabetización Mediática</div>
+              <div class="timeline-role">
+                Docente de Alfabetización Mediática
+              </div>
               <div class="timeline-desc">
                 <p>Ayuntamiento de Barcelona, España</p>
                 <ul>
-                  <li>Facilitación de talleres sobre consumo crítico de medios, narrativa digital y herramientas de comunicación.</li>
+                  <li>
+                    Facilitación de talleres sobre consumo crítico de medios,
+                    narrativa digital y herramientas de comunicación.
+                  </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -198,45 +332,120 @@
         <section id="formacion">
           <div class="section-label reveal">Formación Académica</div>
 
-          <div class="reveal" style="margin-bottom: var(--space-xl);">
+          <div class="reveal" style="margin-bottom: var(--space-xl)">
             <h3>Título Profesional y Especialización</h3>
-            <div style="margin-top: var(--space-sm);">
-              <p style="margin-bottom: var(--space-xs);"><strong style="color: var(--color-text);">Maestría en Comunicación</strong> <span style="color: var(--color-text-dim);">— Universidad Autónoma de Barcelona (UAB), 2010</span></p>
-              <p><strong style="color: var(--color-text);">Diseño Gráfico</strong> <span style="color: var(--color-text-dim);">— INACAP, Temuco, 2005–2008</span></p>
+            <div style="margin-top: var(--space-sm)">
+              <p style="margin-bottom: var(--space-xs)">
+                <strong style="color: var(--color-text)"
+                  >Maestría en Comunicación</strong
+                >
+                <span style="color: var(--color-text-dim)"
+                  >— Universidad Autónoma de Barcelona (UAB), 2010</span
+                >
+              </p>
+              <p>
+                <strong style="color: var(--color-text)">Diseño Gráfico</strong>
+                <span style="color: var(--color-text-dim)"
+                  >— INACAP, Temuco, 2005–2008</span
+                >
+              </p>
             </div>
           </div>
 
           <div class="reveal reveal-delay-1">
             <h3>Laboratorios, Residencias y Formación Especializada</h3>
-            <div style="margin-top: var(--space-sm);">
-              <div class="timeline-item" style="padding-bottom: var(--space-md);">
+            <div style="margin-top: var(--space-sm)">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Estética del proceso. Filosofía de la técnica y tecnoestéticas</strong> — Pliegue, espacio formativo y laboratorio de investigación, Chile, 2024</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Curso de Estética del proceso. Filosofía de la técnica y
+                      tecnoestéticas</strong
+                    >
+                    — Pliegue, espacio formativo y laboratorio de investigación,
+                    Chile, 2024
+                  </p>
                 </div>
               </div>
-              <div class="timeline-item" style="padding-bottom: var(--space-md);">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Redes neuronales e imaginarios digitales de lo postnatural</strong> — Angel Salazar, WIP Arte Digital, Argentina, 2023</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Curso de Redes neuronales e imaginarios digitales de lo
+                      postnatural</strong
+                    >
+                    — Angel Salazar, WIP Arte Digital, Argentina, 2023
+                  </p>
                 </div>
               </div>
-              <div class="timeline-item" style="padding-bottom: var(--space-md);">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Residencia en Escenotecnia</strong> — Montserrat Antileo, Trashumantes &amp; TeatroCinema, 2022</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Residencia en Escenotecnia</strong
+                    >
+                    — Montserrat Antileo, Trashumantes &amp; TeatroCinema, 2022
+                  </p>
                 </div>
               </div>
-              <div class="timeline-item" style="padding-bottom: var(--space-md);">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Orfebrería Digital. Programación en tiempo real</strong> — Flor de Fuego, WIP Arte Digital, Argentina, 2021</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Taller de Videomapping interactivo:
+                      desterritorializaciones contemporáneas.</strong
+                    >
+                    — Lucía Jazmín Tarel, Argentina, 2021
+                  </p>
                 </div>
               </div>
-              <div class="timeline-item" style="padding-bottom: var(--space-md);">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Diplomado en Gestión Cultural</strong> — Universidad Católica de Temuco, 2020</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Curso de Orfebrería Digital. Programación en tiempo
+                      real</strong
+                    >
+                    — Flor de Fuego, WIP Arte Digital, Argentina, 2021
+                  </p>
                 </div>
               </div>
-              <div class="timeline-item" style="padding-bottom: 0;">
+              <div
+                class="timeline-item"
+                style="padding-bottom: var(--space-md)"
+              >
                 <div class="timeline-desc">
-                  <p><strong style="color: var(--color-text);">Fotografía Avanzada</strong> — RUIDO Photo, Barcelona, 2009–2010</p>
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Diplomado en Gestión Cultural</strong
+                    >
+                    — Universidad Católica de Temuco, 2020
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" style="padding-bottom: 0">
+                <div class="timeline-desc">
+                  <p>
+                    <strong style="color: var(--color-text)"
+                      >Curso de Fotografía Avanzada</strong
+                    >
+                    — RUIDO Photo, Barcelona, 2009–2010
+                  </p>
                 </div>
               </div>
             </div>
@@ -249,34 +458,68 @@
 
           <div class="project-card reveal">
             <div class="project-header">
-              <div class="project-title">Selva Fría: Un archivo fílmico de ríos al sur de la frontera desplazada</div>
+              <div class="project-title">
+                Selva Fría: Un archivo fílmico de ríos al sur de la frontera
+                desplazada
+              </div>
             </div>
-            <div class="project-role">Instalación multimedia interactiva y autónoma</div>
+            <div class="project-role">
+              Instalación multimedia interactiva y autónoma
+            </div>
             <div class="project-description">
-              <p>Primera exposición ganadora de la convocatoria UCT 2026. Instalación multimedia interactiva que traduce la investigación-creación sobre territorios fluviales desplazados y memoria del sur de Wallmapu a un lenguaje espacial inmersivo, integrando visualización de datos en tiempo real, morfología histórica y ensamblaje de archivo por parte del espectador.</p>
+              <p>
+                Primera exposición ganadora de la convocatoria UCT 2026.
+                Instalación multimedia interactiva que traduce la
+                investigación-creación sobre territorios fluviales desplazados y
+                memoria del sur de Wallmapu a un lenguaje espacial inmersivo,
+                integrando visualización de datos en tiempo real, morfología
+                histórica y ensamblaje de archivo por parte del espectador.
+              </p>
             </div>
             <div class="project-exhibitions">
               <div class="project-exhibitions-label">Exhibiciones</div>
               <ul class="project-exhibitions-list">
-                <li>2026 — Exposición Individual, Sala de Exposiciones San Francisco, Universidad Católica de Temuco</li>
-                <li>2026 — Ponencia y Exhibición, XII Congreso Chileno de Antropología, Universidad Arturo Prat</li>
-                <li>2025 — Exposición Colectiva, Festival ENFOTO Campos Alterados, Casa del Arte Diego Rivera, Puerto Montt</li>
+                <li>
+                  2026 — Exposición Individual, Sala de Exposiciones San
+                  Francisco, Universidad Católica de Temuco
+                </li>
+                <li>
+                  2026 — Ponencia y Exhibición, XII Congreso Chileno de
+                  Antropología, Universidad Arturo Prat
+                </li>
+                <li>
+                  2025 — Exposición Colectiva, Festival ENFOTO Campos Alterados,
+                  Casa del Arte Diego Rivera, Puerto Montt
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="project-card reveal reveal-delay-1">
             <div class="project-header">
-              <div class="project-title">Los humanos y las aves tienen el mismo tipo y número de huesos en las alas</div>
+              <div class="project-title">
+                Los humanos y las aves tienen el mismo tipo y número de huesos
+                en las alas
+              </div>
             </div>
             <div class="project-role">Proyecto de investigación-creación</div>
             <div class="project-description">
-              <p>Proyecto que examina las tensiones interespecie derivadas de la renovación urbana en Temuco. A través de un sistema visual multi-escalar (fotolibro, archivo y exposición), se evidencian las afectaciones del desarrollo urbano monomórfico sobre la avifauna local, cuestionando los modos de habitar la ciudad y la politicidad que define sus transformaciones territoriales.</p>
+              <p>
+                Proyecto que examina las tensiones interespecie derivadas de la
+                renovación urbana en Temuco. A través de un sistema visual
+                multi-escalar (fotolibro, archivo y exposición), se evidencian
+                las afectaciones del desarrollo urbano monomórfico sobre la
+                avifauna local, cuestionando los modos de habitar la ciudad y la
+                politicidad que define sus transformaciones territoriales.
+              </p>
             </div>
             <div class="project-exhibitions">
               <div class="project-exhibitions-label">Exhibiciones</div>
               <ul class="project-exhibitions-list">
-                <li>2024 — XXIII Bienal de Arquitectura y Urbanismo de Chile, Santiago (6 sedes) — Código OP121</li>
+                <li>
+                  2024 — XXIII Bienal de Arquitectura y Urbanismo de Chile,
+                  Santiago (6 sedes) — Código OP121
+                </li>
               </ul>
             </div>
           </div>
@@ -284,17 +527,40 @@
 
         <!-- PROYECTOS TÉCNICOS -->
         <section id="proyectos">
-          <div class="section-label reveal">Procesos Escenotécnicos y Montajes Expositivos</div>
+          <div class="section-label reveal">
+            Procesos Escenotécnicos y Montajes Expositivos
+          </div>
 
           <div class="project-card reveal">
             <div class="project-header">
-              <div class="project-title">Selva Fría: Un archivo fílmico de ríos al sur de la frontera desplazada</div>
+              <div class="project-title">
+                Selva Fría: Un archivo fílmico de ríos al sur de la frontera
+                desplazada
+              </div>
               <div class="project-year">2025–2026</div>
             </div>
-            <div class="project-role">Co-Director · Diseño Multimedia y Montaje Expositivo</div>
+            <div class="project-role">
+              Co-Director · Diseño Multimedia y Montaje Expositivo
+            </div>
             <div class="project-description">
-              <p>Diseño e implementación de ecosistema expositivo interactivo y autónomo de múltiples nodos. Desarrollo de software en Isadora con interfaz de trackpad para el ensamblaje y mezcla en tiempo real de videos de archivo en dos canales, con registro en vivo de la proyección. Visualización de datos en tiempo real (Processing) superponiendo registros de dron de la cuenca del río Maullín con streams de datos ambientales (CSV open data). Despliegue textual situado mediante proyección al suelo gestionada por Orange Pi. Morfología histórica mediante morphing algorítmico de mapas DEM en monitores controlados por Raspberry Pi. Automatización integral del sistema para operación autónoma de sala.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Objeto Imposible — Co-dirección: Nicolás Venegas y Paulina Soto Cisternas</p>
+              <p>
+                Diseño e implementación de ecosistema expositivo interactivo y
+                autónomo de múltiples nodos. Desarrollo de software en Isadora
+                con interfaz de trackpad para el ensamblaje y mezcla en tiempo
+                real de videos de archivo en dos canales, con registro en vivo
+                de la proyección. Visualización de datos en tiempo real
+                (Processing) superponiendo registros de dron de la cuenca del
+                río Maullín con streams de datos ambientales (CSV open data).
+                Despliegue textual situado mediante proyección al suelo
+                gestionada por Orange Pi. Morfología histórica mediante morphing
+                algorítmico de mapas DEM en monitores controlados por Raspberry
+                Pi. Automatización integral del sistema para operación autónoma
+                de sala.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Objeto Imposible — Co-dirección: Nicolás Venegas y Paulina Soto
+                Cisternas
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Isadora</span>
@@ -310,7 +576,10 @@
               <div class="project-exhibitions-label">Exhibiciones</div>
               <ul class="project-exhibitions-list">
                 <li>Festival de Fotografía En Foto, Puerto Montt — 2025</li>
-                <li>Galería de Arte Aula Magna, Universidad Católica de Temuco — 2026</li>
+                <li>
+                  Galería de Arte Aula Magna, Universidad Católica de Temuco —
+                  2026
+                </li>
               </ul>
             </div>
           </div>
@@ -320,10 +589,28 @@
               <div class="project-title">Non Serviam</div>
               <div class="project-year">2025</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Montaje e Integración de Sistemas Interactivos</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Montaje e Integración de Sistemas
+              Interactivos
+            </div>
             <div class="project-description">
-              <p>Asesoría e implementación de montaje expositivo de ecosistema interactivo sensorial integral. Programación de visión por computadora (Python) para detección de presencia, activando vibración en superficies metálicas mediante parlantes de contacto y generación algorítmica de poesía fonética (combinatoria aleatoria de <em>Altazor</em>) impresa en tiempo real. Diseño de infraestructura física y lógica: montaje de estructura computacional, routing multicanal de audio, instalación de pantallas con performance grabado y configuración de proyección generativa en Audiostellar, vinculada a los triggers de movimiento de las cámaras, basado en el Canto VII de <em>Altazor</em> (Vicente Huidobro).</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Artista: Gabriel Oviedo Pino</p>
+              <p>
+                Asesoría e implementación de montaje expositivo de ecosistema
+                interactivo sensorial integral. Programación de visión por
+                computadora (Python) para detección de presencia, activando
+                vibración en superficies metálicas mediante parlantes de
+                contacto y generación algorítmica de poesía fonética
+                (combinatoria aleatoria de <em>Altazor</em>) impresa en tiempo
+                real. Diseño de infraestructura física y lógica: montaje de
+                estructura computacional, routing multicanal de audio,
+                instalación de pantallas con performance grabado y configuración
+                de proyección generativa en Audiostellar, vinculada a los
+                triggers de movimiento de las cámaras, basado en el Canto VII de
+                <em>Altazor</em> (Vicente Huidobro).
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Artista: Gabriel Oviedo Pino
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Python</span>
@@ -336,20 +623,34 @@
             <div class="project-exhibitions">
               <div class="project-exhibitions-label">Exhibiciones</div>
               <ul class="project-exhibitions-list">
-                <li>Sala de Artes, Universidad de La Frontera (UFRO), Temuco</li>
+                <li>
+                  Sala de Artes, Universidad de La Frontera (UFRO), Temuco
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="project-card reveal">
             <div class="project-header">
-              <div class="project-title">Curatorial en Contexto — Not Warria: Derivas, Cuerpo, Ciudad</div>
+              <div class="project-title">
+                Curatorial en Contexto — Not Warria: Derivas, Cuerpo, Ciudad
+              </div>
               <div class="project-year">2024</div>
             </div>
             <div class="project-role">Diseño Multimedia y Expositivo</div>
             <div class="project-description">
-              <p>Diseño y producción de la capa multimedia y gráfica para la exposición de resultados del proceso curatorial. Articulación visual de las derivas psicogeográficas y narrativas territoriales, integrando la pieza documental y los soportes gráficos al espacio de la sala. Colaboración técnica en el montaje museográfico, asegurando la coherencia espacial, lumínica y visual de la propuesta.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Dirección: Nicole Aliste · Museografía: Cristóbal Artigas</p>
+              <p>
+                Diseño y producción de la capa multimedia y gráfica para la
+                exposición de resultados del proceso curatorial. Articulación
+                visual de las derivas psicogeográficas y narrativas
+                territoriales, integrando la pieza documental y los soportes
+                gráficos al espacio de la sala. Colaboración técnica en el
+                montaje museográfico, asegurando la coherencia espacial,
+                lumínica y visual de la propuesta.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Dirección: Nicole Aliste · Museografía: Cristóbal Artigas
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Edición Documental</span>
@@ -369,10 +670,25 @@
               <div class="project-title">La Invención de la Trama</div>
               <div class="project-year">2024</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Operador Escenotécnico en vivo</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Operador Escenotécnico en vivo
+            </div>
             <div class="project-description">
-              <p>Implementación de ecosistema de projection mapping dinámico mediante programación visual. Integración de renderizado 3D en tiempo real y simulación de física de enjambres (algoritmos de flocking) para proyecciones sobre planos horizontales (floor mapping), estructuras cinéticas y superficies orgánicas (actantes). Diseño de capas de abstracción y superficies de control personalizadas (UI/UX de operación), mapeadas vía MIDI a controladores físicos y vía OSC a interfaces digitales. Enmascaramiento dinámico (dynamic masking) y calibración espacial.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo</p>
+              <p>
+                Implementación de ecosistema de projection mapping dinámico
+                mediante programación visual. Integración de renderizado 3D en
+                tiempo real y simulación de física de enjambres (algoritmos de
+                flocking) para proyecciones sobre planos horizontales (floor
+                mapping), estructuras cinéticas y superficies orgánicas
+                (actantes). Diseño de capas de abstracción y superficies de
+                control personalizadas (UI/UX de operación), mapeadas vía MIDI a
+                controladores físicos y vía OSC a interfaces digitales.
+                Enmascaramiento dinámico (dynamic masking) y calibración
+                espacial.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Isadora</span>
@@ -397,10 +713,22 @@
               <div class="project-title">Quechumalal</div>
               <div class="project-year">2023/2024</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Operador Escenotécnico en vivo</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Operador Escenotécnico en vivo
+            </div>
             <div class="project-description">
-              <p>Diseño de ecosistema escénico inmersivo y distribuido, integrando video wearable multi-canal sobre el cuerpo de la actante y routing de audio analógico para una experiencia de escucha íntima y no lineal. Control inalámbrico de la atmósfera lumínica (LED) y sonora (Bluetooth) vía OSC desde dispositivos móviles, articulando la materialidad escenográfica con la narrativa espacial.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo</p>
+              <p>
+                Diseño de ecosistema escénico inmersivo y distribuido,
+                integrando video wearable multi-canal sobre el cuerpo de la
+                actante y routing de audio analógico para una experiencia de
+                escucha íntima y no lineal. Control inalámbrico de la atmósfera
+                lumínica (LED) y sonora (Bluetooth) vía OSC desde dispositivos
+                móviles, articulando la materialidad escenográfica con la
+                narrativa espacial.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">OSC</span>
@@ -428,10 +756,21 @@
               <div class="project-title">Amo de Llaves</div>
               <div class="project-year">2023</div>
             </div>
-            <div class="project-role">Diseño Técnico · Operador de Luces y Sonido en vivo</div>
+            <div class="project-role">
+              Diseño Técnico · Operador de Luces y Sonido en vivo
+            </div>
             <div class="project-description">
-              <p>Diseño y operación de un sistema de sonido espacializado no convencional, utilizando dispositivos móviles distribuidos entre el público como fuentes de audio. Control unificado en vivo de la planta de luces y sonido, adaptando la operación técnica a las exigencias de intimidad, ritmo y precisión que demanda un monólogo.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo</p>
+              <p>
+                Diseño y operación de un sistema de sonido espacializado no
+                convencional, utilizando dispositivos móviles distribuidos entre
+                el público como fuentes de audio. Control unificado en vivo de
+                la planta de luces y sonido, adaptando la operación técnica a
+                las exigencias de intimidad, ritmo y precisión que demanda un
+                monólogo.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Consolas Iluminación</span>
@@ -452,10 +791,21 @@
               <div class="project-title">Vaporosidad</div>
               <div class="project-year">2023</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Operador Escenotécnico en vivo</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Operador Escenotécnico en vivo
+            </div>
             <div class="project-description">
-              <p>Desarrollo de sistema de videomapping escénico y control sonoro en vivo mediante programación visual. Diseño de superficies de control unificadas (UI/UX) para la operación simultánea de proyecciones y procesamiento de audio en tiempo real. Calibración espacial, integración de capas visuales sobre escenografía y routing de señales vía MIDI/OSC.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo</p>
+              <p>
+                Desarrollo de sistema de videomapping escénico y control sonoro
+                en vivo mediante programación visual. Diseño de superficies de
+                control unificadas (UI/UX) para la operación simultánea de
+                proyecciones y procesamiento de audio en tiempo real.
+                Calibración espacial, integración de capas visuales sobre
+                escenografía y routing de señales vía MIDI/OSC.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Isadora</span>
@@ -478,10 +828,22 @@
               <div class="project-title">La Voz Libre</div>
               <div class="project-year">2023–2024</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Operador Escenotécnico en vivo</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Operador Escenotécnico en vivo
+            </div>
             <div class="project-description">
-              <p>Construcción de sistema de videomapping escénico en base a nodos. Calibración de proyección sobre elementos escenográficos e integración de capas visuales en tiempo real mediante protocolos MIDI/OSC. Diseño de superficies de control personalizadas para la operación en vivo, mapeadas vía MIDI y OSC. Operación de la narrativa visual sincronizada con la acción dramática.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Raudal Teatro · Dirección: Yasmira Velázquez</p>
+              <p>
+                Construcción de sistema de videomapping escénico en base a
+                nodos. Calibración de proyección sobre elementos escenográficos
+                e integración de capas visuales en tiempo real mediante
+                protocolos MIDI/OSC. Diseño de superficies de control
+                personalizadas para la operación en vivo, mapeadas vía MIDI y
+                OSC. Operación de la narrativa visual sincronizada con la acción
+                dramática.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Raudal Teatro · Dirección: Yasmira Velázquez
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Isadora</span>
@@ -511,10 +873,21 @@
               <div class="project-title">Cronotrauma</div>
               <div class="project-year">2022–2024</div>
             </div>
-            <div class="project-role">Diseño Técnico y Multimedia · Operador Escenotécnico en vivo</div>
+            <div class="project-role">
+              Diseño Técnico y Multimedia · Operador Escenotécnico en vivo
+            </div>
             <div class="project-description">
-              <p>Desarrollo de arquitectura de control unificado mediante entornos de nodos, articulando la capa sonora y la proyección. Diseño de superficies de control personalizadas para la operación en vivo, mapeadas vía MIDI y OSC. Routing de señales, sincronización de nodos multimedia y operación en vivo del sistema escénico.</p>
-              <p style="color: var(--color-text-dim); font-size: 0.85rem;">Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo</p>
+              <p>
+                Desarrollo de arquitectura de control unificado mediante
+                entornos de nodos, articulando la capa sonora y la proyección.
+                Diseño de superficies de control personalizadas para la
+                operación en vivo, mapeadas vía MIDI y OSC. Routing de señales,
+                sincronización de nodos multimedia y operación en vivo del
+                sistema escénico.
+              </p>
+              <p style="color: var(--color-text-dim); font-size: 0.85rem">
+                Compañía: Clap Clap Fantasma · Dirección: José Isla Hidalgo
+              </p>
             </div>
             <div class="stack-tags">
               <span class="stack-tag">Isadora</span>
@@ -527,22 +900,29 @@
               <div class="project-exhibitions-label">Exhibiciones</div>
               <ul class="project-exhibitions-list">
                 <li>Apertura — Centro Cultural Galo Sepúlveda, Temuco</li>
-                <li>Festival Escenas Situadas, Gimnasio Municipal de Santa Rosa, Temuco</li>
+                <li>
+                  Festival Escenas Situadas, Gimnasio Municipal de Santa Rosa,
+                  Temuco
+                </li>
                 <li>Reapertura — Kom, Espacio Creación, Temuco</li>
               </ul>
             </div>
           </div>
-
         </section>
 
         <!-- HERRAMIENTAS -->
         <section id="herramientas">
-          <div class="section-label reveal">Entorno de Práctica y Herramientas</div>
+          <div class="section-label reveal">
+            Entorno de Práctica y Herramientas
+          </div>
 
           <div class="skills-grid">
             <div class="skill-category reveal">
               <h3>Arquitectura de Medios y Escenotecnia Digital</h3>
-              <p>Videomapping dinámico, proyección sobre estructuras cinéticas, enmascaramiento en tiempo real.</p>
+              <p>
+                Videomapping dinámico, proyección sobre estructuras cinéticas,
+                enmascaramiento en tiempo real.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">Isadora</span>
                 <span class="skill-tag">Resolume</span>
@@ -552,7 +932,10 @@
             </div>
             <div class="skill-category reveal reveal-delay-1">
               <h3>Programación Visual, IA y Medios Interactivos</h3>
-              <p>Lógica escénica por nodos, algoritmos generativos, redes neuronales e interactividad sensorial.</p>
+              <p>
+                Lógica escénica por nodos, algoritmos generativos, redes
+                neuronales e interactividad sensorial.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">PyTorch</span>
@@ -568,7 +951,10 @@
             </div>
             <div class="skill-category reveal reveal-delay-2">
               <h3>Interconexión, Routing y Control en Tiempo Real</h3>
-              <p>Orquestación de sistemas unificados, sincronización de nodos multimedia y audio.</p>
+              <p>
+                Orquestación de sistemas unificados, sincronización de nodos
+                multimedia y audio.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">MIDI</span>
                 <span class="skill-tag">OSC</span>
@@ -578,7 +964,10 @@
             </div>
             <div class="skill-category reveal reveal-delay-3">
               <h3>Arquitectura de Ecosistemas Digitales</h3>
-              <p>Desarrollo full-stack, visualización de datos, APIs REST, gestión de CMS y servidores.</p>
+              <p>
+                Desarrollo full-stack, visualización de datos, APIs REST,
+                gestión de CMS y servidores.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">HTML5</span>
                 <span class="skill-tag">CSS3</span>
@@ -592,7 +981,10 @@
             </div>
             <div class="skill-category reveal reveal-delay-4">
               <h3>Diseño Sonoro y Síntesis Experimental</h3>
-              <p>Procesamiento de audio en vivo, síntesis digital y producción experimental.</p>
+              <p>
+                Procesamiento de audio en vivo, síntesis digital y producción
+                experimental.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">Ableton Live</span>
                 <span class="skill-tag">SuperCollider</span>
@@ -604,7 +996,10 @@
             </div>
             <div class="skill-category reveal reveal-delay-5">
               <h3>Producción Gráfica y Oficios Materiales</h3>
-              <p>Integración de flujos análogos y digitales, cultura maker y prototipado físico.</p>
+              <p>
+                Integración de flujos análogos y digitales, cultura maker y
+                prototipado físico.
+              </p>
               <div class="skill-tags">
                 <span class="skill-tag">Photoshop</span>
                 <span class="skill-tag">Illustrator</span>
@@ -621,22 +1016,46 @@
           </div>
         </section>
 
-        <div class="data-pulse" aria-label="Años de experiencia activa" title="Experiencia activa"></div>
+        <div
+          class="data-pulse"
+          aria-label="Años de experiencia activa"
+          title="Experiencia activa"
+        ></div>
 
         <!-- FOOTER -->
         <footer class="footer">
-          <p style="color: var(--color-text-dim);">Nicolás Venegas Seguel — 2026</p>
+          <p style="color: var(--color-text-dim)">
+            Nicolás Venegas Seguel — 2026
+          </p>
           <div class="footer-links">
-            <a href="https://github.com/nicolasvenegas" target="_blank" rel="noopener">GitHub</a>
+            <a
+              href="https://github.com/nicolasvenegas"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
           </div>
         </footer>
-
       </div>
     </div>
-    <div class="scroll-progress" role="progressbar" aria-label="Progreso de lectura"></div>
-    <button class="download-btn" onclick="window.print()" aria-label="Descargar CV en PDF">
+    <div
+      class="scroll-progress"
+      role="progressbar"
+      aria-label="Progreso de lectura"
+    ></div>
+    <button
+      class="download-btn"
+      onclick="window.print()"
+      aria-label="Descargar CV en PDF"
+    >
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M8 1v9M4 7l4 4 4-4M3 12v2h10v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path
+          d="M8 1v9M4 7l4 4 4-4M3 12v2h10v-2"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
       Descargar CV
     </button>

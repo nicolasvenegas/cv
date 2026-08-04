@@ -486,11 +486,6 @@ section {
   }
 }
 
-/* Cursor for signal precision */
-body {
-  cursor: crosshair;
-}
-
-a, button, .nav-dot, .stack-tag, .skill-tag {
+a, button, .nav-dot, .stack-tag, .skill-tag, .clickable {
   cursor: pointer;
 }
